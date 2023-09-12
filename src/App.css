@@ -1,38 +1,176 @@
-.App {
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Public Sans;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.booking-image {
+  width: 8rem;
+  height: 2.3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.headings {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Select-Event {
+  margin: 0 auto;
+  width: 846PX;
+  font-family: sans-serif;
+}
+
+/* cards */
+.card-body {
+  text-align: left;
+  /* Move card text to the left */
+}
+
+/* Add space between label and radio button */
+.card-body label {
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+}
+
+.select-container {
+  width: 33rem;
+  font-family: sans-serif;
+  ;
+}
+
+.select-button {
+  padding: 10px 10px;
+  width: 800PX;
+  font-size: 16px;
+  font-family: sans-serif;
+  ;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #E0E2E7;
+  border: none;
+  color: #F9F9FC;
+}
+
+.select-button:hover {
+  background-color: #0056b3;
+}
+
+.select-Rooms {
+  display: flex;
+  padding: 24px;
+  font-weight: 300;
+  font-family: sans-serif;
+  ;
+  width: 900PX;
+  margin: 0 auto;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.select-Packges1 {
+  margin: 0 auto;
+  width: 846PX;
+}
+
+.select-Packges {
+  display: flex;
+  padding: 24px;
+  width: 900PX;
+  margin: 0 auto;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.select-flowers {
+  display: flex;
+  align-items: flex-start;
+  font-family: Public Sans;
+  gap: 16px;
+  padding: 24px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.service-heaing {
+  color: var(--neutral-black-black-500, #1D1F2C);
+
+  font-family: Public Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  /* 155.556% */
+  letter-spacing: 0.18px;
+}
+.round-div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  width: 32px;
+  /* Adjust the width and height as needed */
+  height: 32px;
+  /* Adjust the width and height as needed */
+  border-radius: 100px;
+  background: var(--primary-primary-50, #F4ECFB);
+  margin: 2px;
+  margin-right: 8px;
+  /* Add some space to the right of the round div */
+}
+
+.round-div img {
+  display: block;
+  width: 80%;
+  /* Adjust the size of the image within the round div */
+  height: auto;
+  border-radius: 50%;
+  /* Make the image round */
+}
+
+/* Additional styles for list items */
+.list-group-item {
+  font-family: Public Sans;
+  font-weight:bolder;
+  display: flex;
+  align-items: center;
+  border: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* Remove margin */
+}
+
+/* Additional styles for list items */
+.list-group-item {
+  display: flex;
+  align-items: center;
+}
+
+.Nextbtn {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nextbtn button {
+  background-color: #007bff;
+  color: #fff;
+  width: 20rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
