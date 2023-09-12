@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import plainspace from '../Components/Assets/PLAINSPACE.png';
 import rooms from '../Components/Assets/Frame 60842.png'
 import list1 from '../Components/Assets/fi-sr-database.png'
@@ -78,6 +79,18 @@ const Mainscreen = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='row Select-Date'>
+                <h3 className='Select'>Select Date</h3>
+                <div className='select-container'>
+                    <input type="Date" />
+                </div>
+            </div>
+            <div className='row Select-Time'>
+                <h3 className='Select'>Select Time</h3>
+                <div className='select-container'>
+                    <input type="time" />
                 </div>
             </div>
             <div className='row select-Packges1'>
@@ -162,8 +175,6 @@ const Mainscreen = () => {
                         </li>
                     </ul>
                 </div>
-
-
                 <div className='T-cost'>
                     <p>Total Package Cost</p>
                     <p>$ 4.000</p>

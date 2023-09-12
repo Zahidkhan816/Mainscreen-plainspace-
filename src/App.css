@@ -33,22 +33,79 @@ h3 {
   font-family: sans-serif;
 }
 
-/* cards */
-.card-body {
-  text-align: left;
-  /* Move card text to the left */
+/* Date picker css */
+.Select-Date {
+  margin: 0 auto;
+  width: 846PX;
+  font-family: sans-serif;
+}
+.select-container input[type="date"] {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none; 
+}
+.select-container input[type="date"]:focus {
+  border-color: #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-/* Add space between label and radio button */
+.select-container input[type="date"]::placeholder {
+  color: #888;
+}
+
+.select-container input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #007BFF; 
+  cursor: pointer; 
+}
+
+/* time picker css */
+/* Style the time input */
+.Select-Time {
+  margin: 0 auto;
+  width: 846px;
+  font-family: sans-serif;
+}
+
+.select-container input[type="time"] {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.select-container input[type="time"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.select-container input[type="time"]::placeholder {
+  color: #888;
+}
+
+.select-container input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none; /* Hide the calendar picker indicator for time input */
+}
+
+.card-body {
+  text-align: left;
+}
+
 .card-body label {
   margin-right: 10px;
-  /* Adjust the margin as needed */
 }
 
 .select-container {
   width: 33rem;
   font-family: sans-serif;
-  ;
 }
 
 .select-button {
@@ -74,7 +131,6 @@ h3 {
   padding: 24px;
   font-weight: 300;
   font-family: sans-serif;
-  ;
   width: 900PX;
   margin: 0 auto;
   gap: 30px;
@@ -113,7 +169,6 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  /* 155.556% */
   letter-spacing: 0.18px;
 }
 .round-div {
@@ -122,26 +177,21 @@ h3 {
   justify-content: center;
   font-family: sans-serif;
   width: 32px;
-  /* Adjust the width and height as needed */
   height: 32px;
-  /* Adjust the width and height as needed */
   border-radius: 100px;
   background: var(--primary-primary-50, #F4ECFB);
   margin: 2px;
   margin-right: 8px;
-  /* Add some space to the right of the round div */
 }
 
 .round-div img {
   display: block;
   width: 80%;
-  /* Adjust the size of the image within the round div */
   height: auto;
   border-radius: 50%;
-  /* Make the image round */
+
 }
 
-/* Additional styles for list items */
 .list-group-item {
   font-family: Public Sans;
   font-weight:bolder;
@@ -151,10 +201,10 @@ h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* Remove margin */
+
 }
 
-/* Additional styles for list items */
+
 .list-group-item {
   display: flex;
   align-items: center;
@@ -173,4 +223,59 @@ h3 {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Public Sans;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9fc;
+}
+
+
+@media screen and (max-width: 768px) {
+  .booking-image {
+    width: 6rem;
+    height: 1.8rem;
+  }
+
+  .Select-Event {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .select-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .select-button {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .booking-image {
+    width: 8rem;
+    height: 2.3rem;
+  }
+
+  .Select-Event {
+    width: 846px;
+    margin: 0 auto;
+  }
+
+  .select-container {
+    width: 33rem;
+  }
+
+  .select-button {
+    width: 800px;
+  }
 }
