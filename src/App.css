@@ -29,8 +29,11 @@ h3 {
 
 .Select-Event {
   margin: 0 auto;
-  width: 846PX;
+  width: 900PX;
   font-family: sans-serif;
+  border-radius: 12px;
+  background: var(--neutral-white, #FFF);
+  box-shadow: 0px 4px 30px 0px rgba(46, 45, 116, 0.05);
 }
 
 /* Date picker css */
@@ -39,6 +42,7 @@ h3 {
   width: 846PX;
   font-family: sans-serif;
 }
+
 .select-container input[type="date"] {
   width: 100%;
   font-family: sans-serif;
@@ -47,11 +51,12 @@ h3 {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  outline: none; 
+  outline: none;
 }
+
 .select-container input[type="date"]:focus {
-  border-color: #007BFF; 
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .select-container input[type="date"]::placeholder {
@@ -59,8 +64,8 @@ h3 {
 }
 
 .select-container input[type="date"]::-webkit-calendar-picker-indicator {
-  color: #007BFF; 
-  cursor: pointer; 
+  color: #007BFF;
+  cursor: pointer;
 }
 
 /* time picker css */
@@ -92,7 +97,8 @@ h3 {
 }
 
 .select-container input[type="time"]::-webkit-calendar-picker-indicator {
-  display: none; /* Hide the calendar picker indicator for time input */
+  display: none;
+  /* Hide the calendar picker indicator for time input */
 }
 
 .card-body {
@@ -131,10 +137,37 @@ h3 {
   padding: 24px;
   font-weight: 300;
   font-family: sans-serif;
+  border-radius: 12px;
+  background: var(--neutral-white, #FFF);
+  box-shadow: 0px 4px 30px 0px rgba(46, 45, 116, 0.05);
   width: 900PX;
   margin: 0 auto;
   gap: 30px;
   align-self: stretch;
+}
+
+/* cards packages */
+.Room-packags {
+  display: flex;
+  /* Use flexbox to place the elements in a row */
+  align-items: center;
+  /* Align elements vertically in the center */
+  justify-content: space-between;
+}
+
+.bag-icon {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.package-label {
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.radio-input {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .select-Packges1 {
@@ -155,9 +188,9 @@ h3 {
   display: flex;
   align-items: flex-start;
   font-family: Public Sans;
-  gap: 16px;
-  padding: 24px;
-  width: 900px;
+  gap: 10px;
+  padding: 20px;
+  width: 920px;
   margin: 0 auto;
 }
 
@@ -171,6 +204,7 @@ h3 {
   line-height: 28px;
   letter-spacing: 0.18px;
 }
+
 .round-div {
   display: inline-flex;
   align-items: center;
@@ -194,7 +228,7 @@ h3 {
 
 .list-group-item {
   font-family: Public Sans;
-  font-weight:bolder;
+  font-weight: bolder;
   display: flex;
   align-items: center;
   border: none;
@@ -207,6 +241,14 @@ h3 {
 
 .list-group-item {
   display: flex;
+  align-items: center;
+}
+
+/* cost packags  css */
+.T-cost {
+  display: flex;
+  background-color: hsla(0, 0%, 87%, 0.382);
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -224,6 +266,7 @@ h3 {
   display: block;
   margin: 0 auto;
 }
+
 /* Global styles */
 * {
   padding: 0;
@@ -232,9 +275,6 @@ h3 {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f9f9fc;
-}
 
 
 @media screen and (max-width: 768px) {
