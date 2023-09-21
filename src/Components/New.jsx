@@ -7,10 +7,8 @@ import list2 from '../Components/Assets/Vector.png'
 import list3 from '../Components/Assets/fi-sr-user-add.png'
 import list4 from '../Components/Assets/fi-rr-dollar.png'
 import list5 from '../Components/Assets/fi-sr-apps.png'
-import { Select, Card, Radio } from 'antd';
-import { DatePicker, TimePicker,Button } from 'antd';
-const { Option } = Select;
-const Mainscreen = () => {
+
+const New = () => {
     return (
         <>
             <div className='row main-heading'>
@@ -22,95 +20,92 @@ const Mainscreen = () => {
                     <h6 className='center-bold-text'>Please fill in the details to confirm your order</h6>
                 </div>
             </div>
-
             <div className='row Select-Event'>
                 <h3 className='Select'>Event Type</h3>
                 <div className='select-container'>
-                    <label htmlFor='Select'>Select Event Type</label>
-                    <Select className='select-button'>
-                        <Option value='option1'>Option 1</Option>
-                        <Option value='option2'>Option 2</Option>
-                        <Option value='option3'>Option 3</Option>
-                    </Select>
+                    <label htmlFor="Select">Select Event Type</label>
+                    <select className='select-button'>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
                 </div>
             </div>
-
             <div className='row select-Rooms'>
-                <h5 className='center-heading' style={{ fontWeight: 'bold', fontFamily: 'sans-serif' }}>Select Available Room</h5>
+                <h5 className='center-heading' style={{ fontWeight: "bold", fontFamily: "sans-serif" }}>Select Available Room</h5>
                 <div className='row '>
                     <div className='col-lg-4'>
-                        <Card style={{ width: '16rem' }}>
-                            <img src={rooms} className='card-img-top' alt='...' />
-                            <h5 className='card-title' style={{ fontWeight: 'bold' }}>Room1</h5>
-                            <ul className='list-group list-group-flush'>
-                                <li className='list-group-item'>An item</li>
-                                <li className='list-group-item'>A second item</li>
-                                <li className='list-group-item'>A third item</li>
+                        <div className="card" style={{ width: '16rem' }}>
+                            <img src={rooms} className="card-img-top" alt="..." />
+                            <h5 className="card-title" style={{ fontWeight: "bold" }}>Room1</h5>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">An item</li>
+                                <li className="list-group-item">A second item</li>
+                                <li className="list-group-item">A third item</li>
                             </ul>
-                            <div className='card-body'>
+                            <div className="card-body">
                                 <label>4 Packegs</label>
-                                <Radio value='package1' />
+                                <input type="radio" value="package1" />
                             </div>
-                        </Card>
+                        </div>
                     </div>
                     <div className='col-lg-4'>
-                        <Card style={{ width: '16rem' }}>
-                            <img src={rooms} className='card-img-top' alt='...' />
-                            <h5 className='card-title' style={{ fontWeight: 'bold' }}>Room2</h5>
-                            <ul className='list-group list-group-flush'>
-                                <li className='list-group-item'>An item</li>
-                                <li className='list-group-item'>A second item</li>
-                                <li className='list-group-item'>A third item</li>
+                        <div className="card" style={{ width: '16rem' }}>
+                            <img src={rooms} className="card-img-top" alt="..." />
+                            <h5 className="card-title" style={{ fontWeight: "bold" }}>Room2</h5>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">An item</li>
+                                <li className="list-group-item">A second item</li>
+                                <li className="list-group-item">A third item</li>
                             </ul>
-                            <div className='card-body'>
+                            <div className="card-body">
                                 <label>4 Packegs</label>
-                                <Radio value='package2' />
+                                <input type="radio" value="package2" />
                             </div>
-                        </Card>
+                        </div>
                     </div>
                     <div className='col-lg-4'>
-                        <Card style={{ width: '16rem' }}>
-                            <img src={rooms} className='card-img-top' alt='...' />
-                            <h5 className='card-title' style={{ fontWeight: 'bold' }}>Room3</h5>
-                            <ul className='list-group list-group-flush'>
-                                <li className='list-group-item'>An item</li>
-                                <li className='list-group-item'>A second item</li>
-                                <li className='list-group-item'>A third item</li>
+                        <div className="card" style={{ width: '16rem' }}>
+                            <img src={rooms} className="card-img-top" alt="..." />
+                            <h5 className="card-title" style={{ fontWeight: "bold" }}>Room3</h5>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">An item</li>
+                                <li className="list-group-item">A second item</li>
+                                <li className="list-group-item">A third item</li>
                             </ul>
-                            <div className='card-body'>
+                            <div className="card-body">
                                 <label>4 Packegs</label>
-                                <Radio value='package3' />
+                                <input type="radio" value="package3" />
                             </div>
-                        </Card>
+                        </div>
                     </div>
                 </div>
             </div>
-   <div className='row Select-Date'>
-  <h3 className='Select'>Select Date</h3>
-  <div className='select-container'>
-    <DatePicker style={{ width: '100%' }} />
-  </div>
-</div>
-<div className='row Select-Time'>
-  <h3 className='Select'>Select Time</h3>
-  <div className='select-container'>
-    <TimePicker style={{ width: '100%' }} />
-  </div>
-</div>
-<div className='row select-Packges1'>
-  <h3 className='Select'>Select Packages</h3>
-  <div className='select-container'>
-    <label htmlFor='Select'>Package</label>
-    <Select className='select-button' style={{ width: '100%' }}>
-      <Select.Option value=''>Select</Select.Option>
-      <Select.Option value='option1'>Option 1</Select.Option>
-      <Select.Option value='option2'>Option 2</Select.Option>
-      <Select.Option value='option3'>Option 3</Select.Option>
-    </Select>
-  </div>
-  <hr className='mt-4' />
-</div>
-
+            <div className='row Select-Date'>
+                <h3 className='Select'>Select Date</h3>
+                <div className='select-container'>
+                    <input type="Date" />
+                </div>
+            </div>
+            <div className='row Select-Time'>
+                <h3 className='Select'>Select Time</h3>
+                <div className='select-container'>
+                    <input type="time" />
+                </div>
+            </div>
+            <div className='row select-Packges1'>
+                <h3 className='Select'>Select Packegs</h3>
+                <div className='select-container'>
+                    <label htmlFor="Select">Package</label>
+                    <select className='select-button'>
+                        <option value="">Select</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <hr className='mt-4' />
+            </div>
             <div className='row select-Packges'>
                 <h2 className='center-heading'>Select Package</h2>
                 <div classname="row text-center">
@@ -248,4 +243,4 @@ const Mainscreen = () => {
     );
 }
 
-export default Mainscreen;
+export default New;
